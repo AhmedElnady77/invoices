@@ -14,8 +14,7 @@ use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
 use DB;
-
-    
+use Illuminate\Database\Console\DbCommand;
 
 class RoleController extends Controller
 
@@ -183,7 +182,7 @@ class RoleController extends Controller
 
         $permission = Permission::get();
 
-        $rolePermissions = DB::table("role_has_permissions")->where("role_has_permissions.role_id",$id)
+        $rolePermissions = Db::table("role_has_permissions")->where("role_has_permissions.role_id",$id)
 
             ->pluck('role_has_permissions.permission_id','role_has_permissions.permission_id')
 

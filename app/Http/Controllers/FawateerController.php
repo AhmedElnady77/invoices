@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Storage;
 
 class FawateerController extends Controller
 {
-   
+
     public function index()
     {
         $fawateers = fawateer::all();
@@ -24,7 +24,7 @@ class FawateerController extends Controller
     }
 
     ///////////////////////////////////////
-   
+
     public function create()
     {
         $sections = Section::all();
@@ -34,7 +34,7 @@ class FawateerController extends Controller
 
 ///////////////////////////////////////////////
 
-   
+
     public function store(Request $request)
     {
         fawateer::create([
@@ -156,18 +156,18 @@ public function fawateer_paid()
         $fawateers = fawateer::where('Value_Status', 2)->get();
         return view('fawateer.fawateer_unpaid', compact('fawateers'));
     }
-    
+
 
     ///////////////////////////////////////////////
-    
+
     public function fawateer_partial()
     {
         $fawateers = fawateer::where('Value_Status', 3)->get();
         return view('fawateer.fawateer_partial', compact('fawateers'));
     }
-    
+
     ///////////////////////////////////////////////
-  
+
     public function destroy(request $request)
     {
 

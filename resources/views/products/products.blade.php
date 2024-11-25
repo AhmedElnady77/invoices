@@ -81,10 +81,9 @@
         <div class="card mg-b-20">
             <div class="card-header pb-0">
                 <div class="d-flex justify-content-between">
+                    <a class="modal-effect btn btn-outline-primary btn-block" data-effect="effect-scale" data-toggle="modal" href="#exampleModal">اضافة قسم</a>
                 </div>
-                <div class="col-sm-6 col-md-3 mg-t-10">
-                    <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModal">اضافة منتج</button>
-                </div>
+
             </div>
             <div class="card-body">
                 <div class="table-responsive">

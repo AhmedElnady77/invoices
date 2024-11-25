@@ -32,7 +32,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        // $validate=$request->validate([
+        // $request->validate([
         //     'product_name'=>'required|unique:products|max:255',
 
         //     'description'=>'required',
@@ -44,7 +44,7 @@ class ProductsController extends Controller
         //     'description.required' =>'يرجى ادخال الملاحظات',
 
         // ]);
-
+    
         Products::create([
             'product_name' => $request->Product_name,
             'description' => $request->description,

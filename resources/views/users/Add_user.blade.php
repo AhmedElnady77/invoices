@@ -47,8 +47,7 @@
                         <a class="btn btn-primary btn-sm" href="{{ route('users.index') }}">رجوع</a>
                     </div>
                 </div><br>
-                <form class="parsley-style-1" id="selectForm2" autocomplete="off" name="selectForm2"
-                    action="{{route('users.store','test')}}" method="post">
+                <form class="parsley-style-1" id="selectForm2" autocomplete="off" name="selectForm2" action="{{route('users.store','test')}}" method="post">
                     {{csrf_field()}}
 
                     <div class="">
@@ -56,14 +55,12 @@
                         <div class="row mg-b-20">
                             <div class="parsley-input col-md-6" id="fnWrapper">
                                 <label>اسم المستخدم: <span class="tx-danger">*</span></label>
-                                <input class="form-control form-control-sm mg-b-20"
-                                    data-parsley-class-handler="#lnWrapper" name="name" required="" type="text">
+                                <input class="form-control form-control-sm mg-b-20" data-parsley-class-handler="#lnWrapper" name="name" required="" type="text">
                             </div>
 
                             <div class="parsley-input col-md-6 mg-t-20 mg-md-t-0" id="lnWrapper">
                                 <label>البريد الالكتروني: <span class="tx-danger">*</span></label>
-                                <input class="form-control form-control-sm mg-b-20"
-                                    data-parsley-class-handler="#lnWrapper" name="email" required="" type="email">
+                                <input class="form-control form-control-sm mg-b-20" data-parsley-class-handler="#lnWrapper" name="email" required="" type="email">
                             </div>
                         </div>
 
@@ -72,14 +69,12 @@
                     <div class="row mg-b-20">
                         <div class="parsley-input col-md-6 mg-t-20 mg-md-t-0" id="lnWrapper">
                             <label>كلمة المرور: <span class="tx-danger">*</span></label>
-                            <input class="form-control form-control-sm mg-b-20" data-parsley-class-handler="#lnWrapper"
-                                name="password" required="" type="password">
+                            <input class="form-control form-control-sm mg-b-20" data-parsley-class-handler="#lnWrapper" name="password" required="" type="password">
                         </div>
 
                         <div class="parsley-input col-md-6 mg-t-20 mg-md-t-0" id="lnWrapper">
                             <label> تاكيد كلمة المرور: <span class="tx-danger">*</span></label>
-                            <input class="form-control form-control-sm mg-b-20" data-parsley-class-handler="#lnWrapper"
-                                name="confirm-password" required="" type="password">
+                            <input class="form-control form-control-sm mg-b-20" data-parsley-class-handler="#lnWrapper" name="confirm-password" required="" type="password">
                         </div>
                     </div>
 

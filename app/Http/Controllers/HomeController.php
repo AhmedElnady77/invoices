@@ -9,35 +9,35 @@ class HomeController extends Controller
 {
     public function index(){
 
-        
-   
+
+
         $count_all =fawateer::count();
         $count_invoices1 = fawateer::where('Value_Status', 1)->count();
         $count_invoices2 = fawateer::where('Value_Status', 2)->count();
         $count_invoices3 = fawateer::where('Value_Status', 3)->count();
-  
+
         if($count_invoices2 == 0){
             $nspainvoices2=0;
         }
         else{
             $nspainvoices2 = $count_invoices2/ $count_all*100;
         }
-  
+
           if($count_invoices1 == 0){
               $nspainvoices1=0;
           }
           else{
               $nspainvoices1 = $count_invoices1/ $count_all*100;
           }
-  
+
           if($count_invoices3 == 0){
               $nspainvoices3=0;
           }
           else{
               $nspainvoices3 = $count_invoices3/ $count_all*100;
           }
-  
-  
+
+
           $chartjs = app()->chartjs
               ->name('barChartTest')
               ->type('bar')
@@ -59,8 +59,8 @@ class HomeController extends Controller
                       'backgroundColor' => ['#ff9642'],
                       'data' => [$nspainvoices3]
                   ],
-  
-  
+
+
               ])
               ->options([]);
 

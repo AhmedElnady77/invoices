@@ -53,7 +53,7 @@
 										</div>
 										<span class="float-right my-auto mr-auto">
 											
-											<span class="text-white op-7"></span>
+											<span class="text-white op-7">{{round((App\Models\fawateer::where('status','غير مدفوعة')->count()/\App\Models\fawateer::count()) *100)}}%</span>
 										</span>
 									</div>
 								</div>
@@ -75,7 +75,7 @@
 										</div>
 										<span class="float-right my-auto mr-auto">
 											
-											<span class="text-white op-7"></span>
+											<span class="text-white op-7">{{round((App\Models\fawateer::where('value_status',1)->count()/\App\Models\fawateer::count()) *100)}}%</span>
 										</span>
 									</div>
 								</div>
@@ -97,7 +97,7 @@
 										</div>
 										<span class="float-right my-auto mr-auto">
 										
-											<span class="text-white op-7"></span>
+											<span class="text-white op-7">{{round((App\Models\fawateer::where('value_status',3)->count()/\App\Models\fawateer::count()) *100)}}%</span>
 										</span>
 									</div>
 								</div>
